@@ -57,6 +57,39 @@ The tools need Python 3.8 or newer. Nothing to pip install. The SEC tools
 email in `trader/config.json` (`"sec_user_agent": "Your Name you@example.com"`)
 or in the `SEC_USER_AGENT` environment variable.
 
+### GitHub Copilot quick start
+
+This repo is Claude-first, but every tool is plain Python so it also runs in
+GitHub Copilot environments (local terminal, Codespaces, and Copilot coding
+agent jobs).
+
+1. Clone and open the repo:
+   ```bash
+   git clone https://github.com/Jakeschincariol/day-trader-skill.git
+   cd day-trader-skill
+   ```
+2. Create runtime config:
+   ```bash
+   mkdir -p trader
+   cp trader-budget/config.example.json trader/config.json
+   ```
+3. For SEC-backed tools (`trader-news`, `trader-analyst`), set your identity:
+   ```bash
+   export SEC_USER_AGENT="Your Name you@example.com"
+   ```
+4. For Alpaca paper trading, set credentials in your shell or MCP config
+   (never in chat):
+   ```bash
+   export APCA_API_KEY_ID="your paper key"
+   export APCA_API_SECRET_KEY="your paper secret"
+   export APCA_API_BASE_URL="https://paper-api.alpaca.markets"
+   export ALPACA_API_KEY="$APCA_API_KEY_ID"
+   export ALPACA_SECRET_KEY="$APCA_API_SECRET_KEY"
+   export ALPACA_PAPER_TRADE="true"
+   ```
+   `APCA_*` names are common in Alpaca docs and SDKs. `ALPACA_*` names are read
+   by Alpaca's MCP server config shown in this repo.
+
 ## The eleven
 
 | command | job | what it does |
@@ -168,7 +201,8 @@ selling or leverage unless you turn them on.
 
 **Paper first.** `"paper": true` is the default in `config.example.json`, and
 Alpaca's MCP server defaults to its paper account. Keys live in environment
-variables, never in the chat.
+variables (`APCA_API_KEY_ID`/`APCA_API_SECRET_KEY` and/or
+`ALPACA_API_KEY`/`ALPACA_SECRET_KEY`), never in the chat.
 
 **The Time Machine is a simulation, not a prediction.** It is built from the
 stock's own last 60 days of 5-minute bars. The future can do things those 60

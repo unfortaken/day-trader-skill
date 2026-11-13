@@ -1,0 +1,17 @@
+A|Agilent Technologies, Inc. Common Stock
+AACG|ATA Creativity Global - American Depositary Shares, each representing two common shares
+AACI|Armada Acquisition Corp. III - Class A Ordinary Share
+AAPL|Apple Inc. - Common Stock
+AME|AMETEK, Inc.
+AMX|America Movil, S.A.B. de C.V. American Depositary Shares (each representing the right to receive twenty (20) Series B Shares
+ARLP|Alliance Resource Partners, L.P. - Common Units Representing Limited Partnership Interests
+BEP|Brookfield Renewable Partners L.P. Limited Partnership Units
+BF.B|Brown Forman Inc Class B Common Stock
+BRK.B|Berkshire Hathaway Inc. New Common Stock
+IRS|IRSA Inversiones Y Representaciones S.A. Global Depositary Shares (Each representing ten shares of Common Stock)
+KO|Coca-Cola Company (The) Common Stock
+OBAI|Our Bond, Inc. - Common Stock
+ORGO|Organogenesis Holdings Inc. - Class A
+PFBC|Preferred Bank - Common Stock
+PRT|PermRock Royalty Trust Units of Beneficial Interest
+TSLA|Tesla, Inc. - Common Stock
